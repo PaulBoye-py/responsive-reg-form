@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" ></script>
+    <title>Registration Page</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="container-left">
+                <div class="big-text">
+                    <h1>Learn to code by</h1>
+                    <h1>watching others</h1>
+                </div>
+                <div class="small-text">
+                    <p>See how experienced developers solve problems in real-time.</p>
+                    <p>Watching scripted tutorials is great, but understanding how</p>
+                    <p>developers think is invaluable.</p>
+                </div>
+            </div>
+            <div class="container-right">
+                <div class="form-head">
+                    <p><b>Try it free for 7 days</b> then $20/mo, thereafter</p>
+                </div>
+                <div class="form">
+                    <form action="" method="post">
+                        <div class="form-group" data-error="First Name cannot be empty">
+                            <input type="text" 
+                            placeholder="First Name" 
+                            id="firstname" required 
+                            oninvalid="this.setCustomValidity('First Name cannot be empty')" 
+                            oninput="this.setCustomValidity('')"> 
+                        </div>
+                        <div class="form-group" data-error="Last Name cannot be empty">
+                            <input type="text" 
+                            placeholder="Last Name" 
+                            id="lastname" required
+                            oninvalid="this.setCustomValidity('Last Name cannot be empty')" 
+                            oninput="this.setCustomValidity('')">
+                        </div>
+                        <div class="form-group" data-error="Looks like this is not an email">
+                            <input type="email" 
+                            placeholder="Email Address" 
+                            id="email" required 
+                            oninvalid="this.setCustomValidity('Looks like this is not an email')" 
+                            oninput="this.setCustomValidity('')">
+                        </div>
+                        <div class="form-group" data-error="Password cannot be e">
+                            <input type="password" 
+                            placeholder="Password" 
+                            id="password" required 
+                            oninvalid="this.setCustomValidity('Password cannot be empty')" 
+                            oninput="this.setCustomValidity('')">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="CLAIM YOUR FREE TRIAL">
+                        </div>
+                        <div class="footer">
+                            <p style="color: hsl(246, 25%, 77%);">By clicking the button, you are aggreing to our <b style="color: hsl(0, 100%, 74%) ;;">Terms and Services</b></p>
+                        </div>
+                    </form>
+                </div>    
+            </div>
+        </div>   
+    </main>
+</body>
+</html>
